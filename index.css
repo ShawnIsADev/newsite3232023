@@ -77,6 +77,17 @@ section{
     background-color: var(--white);
     color: var(--black);
 }
+/* heading for our courses section */
+.heading{
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--white);
+}
+
+.heading span{
+    color: var(--green);
+}
 
 .header{
     position: fixed;
@@ -218,8 +229,39 @@ margin-top: 6rem;
     color: var(--light-white);
 }
 
+/* courses section */
+
+.courses .slide{
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
+
+.courses .slide img{
+    height: 25rem;
+    width: 100%;
+}
+.courses .slide h3{
+    margin: 1.5rem 0;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.courses .slide p{
+    line-height: 2;
+    font-size: 1.6rem;
+    color: var(--light-white);
+}
 
 
+.swiper-pagination-bullet{
+    background-color: var(--white);
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--green);
+}
 
 
 
@@ -269,12 +311,16 @@ margin-top: 6rem;
         margin: 2rem;
     }
     #home .row .content h3{
-        font-size: 5rem;
+        font-size: 6rem;
     }
 }
 
 @media(max-width: 450px){
     html{
         font-size: 50%;
+    }
+
+    #home .row .content h3{
+        font-size: 5rem;
     }
 }
